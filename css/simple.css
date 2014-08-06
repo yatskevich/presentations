@@ -75,7 +75,7 @@ a:hover {
 }
 
 .reveal section li {
-  margin-bottom: 1.5em !important;
+  margin-bottom: .7em !important;
 }
 
 .reveal section .about {
@@ -87,7 +87,7 @@ a:hover {
 }
 
 .link2video {
-  margin: -30px 20px 40px 0 !important;
+  margin: -30px 20px 10px 0 !important;
   display: inline-block;
 }
 
@@ -114,12 +114,23 @@ a:hover {
 }
 
 .speaker li  {
-  width: 40%;
+  width: 39%;
   margin-right: 100px;
+  padding-left: 200px;
+  position: relative;
   display: inline-block;
   vertical-align: top;
   list-style: none;
-  font-size: .9em;
+  font-size: .7em;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.speaker li:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .speaker img {
@@ -131,13 +142,14 @@ a:hover {
 
 .speaker .photo {
   width: 150px;
+  top: 0;
+  left: 0;
+  position: absolute;
   margin-right: 50px;
-  float: left;
 }
 
 .speaker .text {
   padding-top: 15px;
-  overflow: hidden;
 }
 
 .speaker li h4 {
@@ -150,7 +162,9 @@ a:hover {
 }
 
 section ol {
+  margin-top: 40px !important;
   counter-reset: list; 
+  font-size: .7em !important;
 }
 
 section ol li {
@@ -187,7 +201,7 @@ section ol > li:before {
   background: #53CDEC;
   width: 2em;
   height: 2em;
-  top: 0.1em;
+  top: 0.5em;
   left: -1.2em;
   position: absolute;
   color: #FFF;
@@ -247,11 +261,6 @@ pre code {
   color: #53CDEC;
 }
 
-
-
-.reveal h2, .reveal h3, .reveal h4 {
-  margin-bottom: 1em;
-}
 
 
 
