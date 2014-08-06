@@ -147,7 +147,31 @@ section ol li {
   position: relative;
 }
 
-section ol li:before {
+section ol li ul {
+  margin: 1.5em 0 1em .7em !important;
+}
+
+section ol li ul li {
+  padding-left: .4em !important;
+}
+
+section ol li ul li:before {
+  width: .9em;
+  height: .9em;
+  top: .6em;
+  content: '';
+
+    background: #53CDEC;
+  left: -1.2em;
+  position: absolute;
+  color: #FFF;
+  font-size: .6em;
+  line-height: 2.19em;
+  text-align: center;
+  border-radius: 50%;
+}
+
+section ol > li:before {
   background: #53CDEC;
   width: 2em;
   height: 2em;
