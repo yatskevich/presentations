@@ -1,0 +1,967 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+
+    <title>ScalaDays in Berlin'14</title>
+
+    <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+    <meta name="author" content="Hakim El Hattab">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/simple.css" id="theme">
+
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+        if (window.location.search.match(/print-pdf/gi)) {
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = 'css/print/pdf.css';
+            document.getElementsByTagName('head')[0].appendChild(link);
+        }
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+<div class="reveal">
+
+<!-- Any section element inside of this container is displayed as a slide -->
+<div class="slides">
+<section data-background="#53CDEC">
+    <h1>Scala<b>Days</b></h1>
+    <h4>June 16th - 18th, Berlin</h4>
+
+    <p>
+    </p>
+</section>
+
+<section data-background="#F16665" class="authors">
+    <div class="cherrit">
+        <div class="author">
+            <img src="photos/ivan.jpg" alt="">
+
+            <h6>Ivan <b>Yatskevich</b></h6>
+        </div>
+
+        <div class="author">
+            <img src="photos/sergey.jpg" alt="">
+
+            <h6>Sergey <b>Krauchenia</b></h6>
+        </div>
+    </div>
+</section>
+
+<section data-background="#53CDEC">
+    <div class="sponsor">
+        <h5>Thank you, Cherrit!</h5>
+    </div>
+</section>
+
+<section>
+    <section data-state="martin">
+        <h2>Scala: The Simple Parts</h2>
+
+        <p class="link2video">
+            <a href="https://www.parleys.com/play/53a7d2c3e4b0543940d9e536">Video</a>
+        </p>
+
+        <p class="link2video">
+            <a href="https://docs.google.com/file/d/0B2qUpWRj1VdZMHBRV2RmQVlOZndmTjh1WklqNU8zSF9SOGlz/edit">Slides</a>
+        </p>
+
+        <ul class="speaker">
+            <li>
+                <div class="photo">
+                    <img src="photos/speakers/martin.jpg">
+                </div>
+                <div class="text">
+                    <h4>Martin Odersky</h4>
+
+                    <p><a target="_blank" href="http://twitter.com/@odersky"> @odersky </a></p>
+                    <h5>EPFL & Typesafe Inc</h5>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h5>Scala: The Simple Parts</h5>
+        <blockquote>
+            "Martin Odersky created Scala, a language that unifies constructs from both object oriented and functional
+            languages. This pisses off both groups and each promptly declares jihad."
+        </blockquote>
+
+        <ol>
+            <li class="fragment">~14 simple parts of Scala which Martin uses and is happy about</li>
+            <li class="fragment">Addressed several issues like CanBuildFrom</li>
+            <li class="fragment">Abstractions</li>
+            <li class="fragment">dotty</li>
+        </ol>
+    </section>
+</section>
+
+<section>
+    <img src="photos/sergey-and-martin.jpg">
+</section>
+
+<section>
+    <section data-state="erik">
+        <h2>The Lost Art of Denotational Semantics</h2>
+
+        <p class="link2video">
+            <a href="https://www.parleys.com/play/53a7d2c9e4b0543940d9e553">Video</a>
+        </p>
+
+        <p class="link2video">
+            <a href="https://db.tt/i0k09zo8">Slides</a>
+        </p>
+
+        <ul class="speaker">
+            <li>
+                <div class="photo">
+                    <img src="photos/speakers/erik.png">
+                </div>
+
+                <div class="text">
+                    <h4>Erik Meijer</h4>
+
+                    <p><a target="_blank" href="http://twitter.com/@headinthebox"> @headinthebox </a></p>
+                    <h5>Applied Duality Inc.</h5>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h5>The Lost Art of Denotational Semantics</h5>
+
+        <ol>
+            <li>Learning it will help you become better functional programmer</li>
+            <li class="fragment">Executable spec - converts syntax to semantics, semantics to almost executable
+                code. Written interpreter and compiler in 40 minutes
+            </li>
+            <li class="fragment">
+                Teasing us, would be happy if 10-20 out of 800 people will understand the talk and learn more later.
+            </li>
+        </ol>
+    </section>
+    <section>
+        <img src="photos/erik-slides.jpg">
+    </section>
+</section>
+
+<section>
+    <section data-state="quasiqoutes">
+        <h2>Quote or be quoted</h2>
+
+        <p class="link2video">
+            <a href="https://www.parleys.com/play/53a7d2c4e4b0543940d9e53e">Video</a>
+        </p>
+
+        <p class="link2video">
+            <a href="https://raw.githubusercontent.com/densh/talks/master/quote-or-be-quoted-2014-06-17/Quote%20or%20be%20quoted.pdf">Slides</a>
+        </p>
+
+        <p class="link2video">
+            <a href="https://github.com/densh/joyquote">Code</a>
+        </p>
+
+        <ul class="speaker">
+            <li>
+                <div class="photo">
+                    <img src="photos/speakers/shabalin.jpg">
+                </div>
+
+                <div class="text">
+                    <h4>Denys Shabalin</h4>
+
+                    <p><a target="_blank" href="http://twitter.com/@den_sh"> @den_sh </a></p>
+                    <h5>Typesafe Inc & EPFL</h5>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h5>Quote or be quoted</h5>
+
+        <ol>
+            <li>Joy language implemented using quasiquotes</li>
+            <li class="fragment">A lot of code examples</li>
+        </ol>
+    </section>
+</section>
+
+<section>
+    <section data-state="slick-in-the-field">
+        <h2>Slick in the field, learning to forget ORM</h2>
+
+        <p class="link2video">
+            <a href="http://parleys.com/play/53a7d2c6e4b0543940d9e54c">Video</a>
+        </p>
+
+        <p class="link2video">
+            <a href="https://speakerdeck.com/rcavalcanti/slick-in-the-field-learning-to-forget-orm">Slides</a>
+        </p>
+
+        <p class="link2video">
+            <a href="https://github.com/strongtyped/active-slick">Code</a>
+        </p>
+
+
+        <ul class="speaker">
+            <li>
+                <div class="photo">
+                    <img src="photos/speakers/renato.jpg">
+                </div>
+
+                <div class="text">
+                    <h4>Renato Cavalcanti</h4>
+
+                    <p><a target="_blank" href="http://twitter.com/@renatocaval"> @renatocaval </a></p>
+                    <h5>BeScala</h5>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h5>Slick in the field, learning to forget ORM</h5>
+
+        <ol>
+            <li>Generic DAO for slick</li>
+            <li class="fragment">Separate model from tables</li>
+            <li class="fragment">Separate queries from tables</li>
+            <li class="fragment">Id vs Object in relations</li>
+            <li class="fragment">In-Memory DB - bad choice for testing</li>
+        </ol>
+    </section>
+</section>
+
+<section>
+    <section data-state="reactivestreams">
+        <h2>Reactive Streams: And why you should care.</h2>
+
+        <p class="link2video">
+            <a href="https://www.parleys.com/play/53a7d2c3e4b0543940d9e53a">Video</a>
+        </p>
+
+        <ul class="speaker">
+            <li>
+                <div class="photo">
+                    <img src="photos/speakers/klang.jpg">
+                </div>
+                <div class="text">
+                    <h4>Viktor Klang</h4>
+
+                    <p><a target="_blank" href="http://twitter.com/@viktorklang"> @viktorklang </a></p>
+                    <h5>Typesafe Inc</h5>
+                </div>
+            </li>
+            <li>
+                <div class="photo">
+                    <img src="photos/speakers/roland.jpg">
+                </div>
+
+                <div class="text">
+                    <h4>Roland Kuhn</h4>
+
+                    <p><a target="_blank" href="http://twitter.com/@rolandkuhn"> @rolandkuhn </a></p>
+                    <h5>Typesafe Inc</h5>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <section>
+        <h5>Reactive Streams: And why you should care.</h5>
+
+        <ol>
+            <li>Motivation behind reactive streams initiative</li>
+            <li class="fragment">Code examples, live coding</li>
+            <li class="fragment">Backpressure</li>
+            <li class="fragment">Streams are not collections - "like a river"</li>
+        </ol>
+    </section>
+</section>
+
+<section>
+    <section data-state="distributed-systems">
+        <h2>Without Past and Present</h2>
+
+        <p class="link2video">
+            <a href="http://parleys.com/play/53a7d2c4e4b0543940d9e540">Video</a>
+        </p>
+
+        <ul class="speaker">
+            <li>
+                <div class="photo">
+                    <img src="photos/speakers/varga.jpg">
+                </div>
+
+                <div class="text">
+                    <h4>Endre Varga</h4>
+
+                    <p><a target="_blank" href="http://twitter.com/@drewhk"> @drewhk </a></p>
+                    <h5>Typesafe Inc</h5>
+                </div>
+            </li>
+        </ul>
+    </section>
+</section>
+
+<section>
+    <section data-state="sbt">
+        <h2>Learn you an sbt for fun and profit!</h2>
+
+        <p class="link2video">
+            <a href="https://www.parleys.com/play/53a7d2c6e4b0543940d9e54d">Video</a>
+        </p>
+
+        <p class="link2video">
+            <a href="http://danielwestheide.com/talks/scaladays2014/slides/#/">Slides</a>
+        </p>
+
+        <p class="link2video">
+            <a href="https://github.com/dwestheide/learn-you-an-sbt-example">Code</a>
+        </p>
+
+        <ul class="speaker">
+            <li>
+                <div class="photo">
+                    <img src="photos/speakers/westheide.jpg">
+                </div>
+
+                <div class="text">
+                    <h4>Daniel Westheide</h4>
+
+                    <p><a target="_blank" href="http://twitter.com/@kaffeecoder"> @kaffeecoder </a></p>
+                    <h5>innoQ Deutschland GmbH</h5>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h5>Learn you an sbt for fun and profit!</h5>
+
+        <ol>
+            <li>Intro to sbt</li>
+            <li class="fragment">Functional style - immutable, transformations</li>
+            <li class="fragment">keys, task keys, settings, autoplugins</li>
+            <li class="fragment">sbt-git, sbt-revolver</li>
+        </ol>
+    </section>
+</section>
+
+<section>
+    <section data-state="playframework">
+        <h2>Play Framework - from 2.2 to 2.3 and Beyond</h2>
+
+        <p class="link2video">
+            <a href="https://www.parleys.com/play/53a7d2c6e4b0543940d9e54e">Video</a>
+        </p>
+
+        <ul class="speaker">
+            <li>
+                <div class="photo">
+                    <img src="photos/speakers/play.png">
+                </div>
+
+                <div class="text">
+                    <h4>Play Framework Team</h4>
+
+                    <p><a target="_blank" href="http://twitter.com/@playframework"> @playframework </a></p>
+                    <h5>Typesafe Inc</h5>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h5>Play Framework - from 2.2 to 2.3 and Beyond</h5>
+
+        <ol>
+            <li>Performance improvements</li>
+            <li class="fragment">Last version in 2.x will be 2.4</li>
+            <li class="fragment">Play 3: DI, more Akka stuff inside, modularization</li>
+        </ol>
+    </section>
+</section>
+
+<section>
+    <section data-state="akka-persistence">
+        <h3>Resilient Applications with Akka Persistence</h3>
+
+        <p class="link2video">
+            <a href="http://parleys.com/play/53a7d2c3e4b0543940d9e53b">Video</a>
+        </p>
+
+        <p class="link2video">
+            <a href="http://www.slideshare.net/bantonsson/akka-persistencescaladays2014">Slides</a>
+        </p>
+
+        <ul class="speaker">
+            <li>
+                <div class="photo">
+                    <img src="photos/speakers/patrik.jpg">
+                </div>
+
+                <div class="text">
+
+                    <h4>Patrik Nordwall</h4>
+
+                    <p><a target="_blank" href="http://twitter.com/@patriknw"> @patriknw </a></p>
+                    <h5>Typesafe Inc</h5>
+                </div>
+            </li>
+
+            <li>
+                <div class="photo">
+                    <img src="photos/speakers/malawski.jpg">
+                </div>
+
+                <div class="text">
+                    <h4>Konrad Malawski</h4>
+
+                    <p><a target="_blank" href="http://twitter.com/@ktosopl"> @ktosopl </a></p>
+                    <h5>Typesafe</h5>
+                </div>
+            </li>
+
+            <li>
+
+                <div class="photo">
+                    <img src="photos/speakers/antonsson.jpg">
+                </div>
+
+                <div class="text">
+                    <h4>Björn Antonsson</h4>
+
+                    <p><a target="_blank" href="http://twitter.com/@bantonsson"> @bantonsson </a></p>
+                    <h5>Typesafe Inc</h5>
+                </div>
+            </li>
+        </ul>
+
+    </section>
+
+    <section>
+        <h5>Resilient Applications with Akka Persistence</h5>
+
+        <ol>
+            <li>Event Sourcing</li>
+            <li class="fragment">CQRS</li>
+            <li class="fragment">Clustering problem solving</li>
+        </ol>
+    </section>
+</section>
+
+<section>
+    <section data-state="scalablitz">
+        <h2>Lightning-Fast Standard Collections With ScalaBlitz</h2>
+
+        <p class="link2video">
+            <a href="https://www.parleys.com/play/53a7d2c6e4b0543940d9e549">Video</a>
+        </p>
+
+        <p class="link2video">
+            <a href="https://scala-blitz.github.io/talks/scaladays2014-final.pdf">Slides</a>
+        </p>
+
+        <ul class="speaker">
+            <li>
+                <div class="photo">
+                    <img src="photos/speakers/petrashko.jpg">
+                </div>
+                <div class="text">
+                    <h4>Dmitry Petrashko</h4>
+
+                    <p><a target="_blank" href="http://twitter.com/@dark_dimius"> @dark_dimius </a></p>
+                    <h5>EPFL</h5>
+                </div>
+            </li>
+        </ul>
+
+    </section>
+
+    <section>
+        <h5>Lightning-Fast Standard Collections With ScalaBlitz</h5>
+
+        <ol>
+            <li>Standard collections with primitive types perf boost</li>
+            <li class="fragment">par.view != view.par</li>
+            <li class="fragment">foldLeft, foldRight cannot be truly parallel</li>
+            <li class="fragment">Operation fusion</li>
+            <li class="fragment">Deforestation</li>
+        </ol>
+    </section>
+</section>
+
+<section>
+    <section data-state="simplifying-scala">
+        <h2>Simplifying Scala — The Past, Present and Future</h2>
+
+        <p class="link2video">
+            <a href="https://www.parleys.com/play/53a7d2c7e4b0543940d9e551">Video</a>
+        </p>
+
+        <p class="link2video">
+            <a href="http://oxnrtr.de/scaladays">Slides</a>
+        </p>
+
+        <ul class="speaker">
+            <li>
+                <div class="photo">
+                    <img src="photos/speakers/simon.jpg">
+                </div>
+
+                <div class="text">
+                    <h4>Simon Ochsenreither</h4>
+
+                    <p><a target="_blank" href="http://twitter.com/@oxnrtr"> @oxnrtr </a></p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <section>
+        <h5>Simplifying Scala — The Past, Present and Future</h5>
+
+        <ol>
+            <li>Deprecations of procedure syntax, view bounds</li>
+            <li class="fragment">Unit value insertion deprecated, will be removed</li>
+            <li class="fragment">Proposed to simplify partial function syntax, remove braces and case</li>
+            <li class="fragment">Avian VM - http://oss.readytalk.com/avian/</li>
+            <li class="fragment">
+                Idea from audience - experimental features can be implemented in Avian, and then proposed to
+                Oracle
+            </li>
+        </ol>
+    </section>
+</section>
+
+<section>
+    <section data-state="scala-meta">
+        <h2>Easy Metaprogramming For Everyone!</h2>
+
+        <p class="link2video">
+            <a href="https://www.parleys.com/play/53a7d2c6e4b0543940d9e54b">Video</a>
+        </p>
+
+        <p class="link2video">
+            <a href="http://scalamacros.org/paperstalks/2014-06-17-EasyMetaprogrammingForEveryone.pdf">Slides</a>
+        </p>
+
+        <ul class="speaker">
+            <li>
+                <div class="photo">
+                    <img src="photos/speakers/burmako.jpg">
+                </div>
+
+                <div class="text">
+                    <h4>Eugene Burmako</h4>
+
+                    <p><a target="_blank" href="http://twitter.com/@xeno_by"> @xeno_by </a></p>
+                    <h5>EPFL</h5>
+                </div>
+            </li>
+            <li>
+                <div class="photo">
+                    <img src="photos/speakers/shabalin.jpg">
+                </div>
+
+                <div class="text">
+                    <h4>Denys Shabalin</h4>
+
+                    <p><a target="_blank" href="http://twitter.com/@den_sh"> @den_sh </a></p>
+                    <h5>Typesafe Inc & EPFL</h5>
+                </div>
+            </li>
+        </ul>
+
+    </section>
+
+    <section>
+        <h5>Easy Metaprogramming For Everyone!</h5>
+
+        <ol>
+            <li>scala.reflect: AST, Types, Symbols, Annotations and so on.</li>
+            <li class="fragment">New scala.meta, everything is represented with a tree</li>
+            <li class="fragment">No desugaring</li>
+            <li class="fragment">No need to place macro definition in another project</li>
+            <li class="fragment">IDE support for in-place macro expansion</li>
+            <li class="fragment">Store the whole program AST with bytecode, 20% overhead in size</li>
+            <li class="fragment">Better compilation support, more rigid</li>
+            <li class="fragment">Live coding, just quasiqoutes, easy as 1-2-3</li>
+            <li class="fragment">Coming this fall!</li>
+        </ol>
+    </section>
+</section>
+
+<section>
+    <section>
+        <img src="photos/afterparty.jpg">
+    </section>
+</section>
+
+<section>
+    <section data-state="macwire-di">
+        <h2>The no-framework Scala Dependency Injection Framework</h2>
+
+        <p class="link2video">
+            <a href="https://www.parleys.com/play/53a7d2cce4b0543940d9e55b">Video</a>
+        </p>
+
+        <ul class="speaker">
+            <li>
+                <div class="photo">
+                    <img src="photos/speakers/warski.jpg">
+                </div>
+
+                <div class="text">
+                    <h4>Adam Warski</h4>
+
+                    <p><a target="_blank" href="http://twitter.com/@adamwarski"> @adamwarski </a></p>
+                </div>
+            </li>
+        </ul>
+
+    </section>
+
+    <section>
+        <h5>The no-framework Scala Dependency Injection Framework</h5>
+
+        <ol>
+            <li>MacWire by example</li>
+            <li class="fragment">Play example</li>
+            <li class="fragment">Play team will work together with Adam on DI features in Play</li>
+        </ol>
+    </section>
+</section>
+
+<section>
+    <section data-state="dot-calculus">
+        <h2>DOT calculus</h2>
+
+        <p class="link2video">
+            <a href="http://parleys.com/play/53a7d2d0e4b0543940d9e569">Video</a>
+        </p>
+
+        <p class="link2video">
+            <a href="http://lampwww.epfl.ch/~amin/dot/scaladays-slides.pdf">Slides</a>
+        </p>
+
+        <p class="link2video">
+            <a href="http://www.cs.uwm.edu/~boyland/fool2012/papers/fool2012_submission_3.pdf">Paper</a>
+        </p>
+
+        <ul class="speaker">
+            <li>
+                <div class="photo">
+                    <img src="photos/speakers/amin.jpg">
+                </div>
+
+                <div class="text">
+                    <h4>Nada Amin</h4>
+
+                    <p><a target="_blank" href="http://twitter.com/@nadamin"> @nadamin </a></p>
+                    <h5>EPFL</h5>
+                </div>
+            </li>
+        </ul>
+
+    </section>
+
+    <section>
+        <h5>DOT calculus</h5>
+
+        <ol>
+            <li>Dependent Object Types</li>
+            <li class="fragment">Simplify Scala type system</li>
+            <li class="fragment">Simplify Scala type inference</li>
+            <li class="fragment">Type parameters => type members</li>
+            <li class="fragment">DRY</li>
+        </ol>
+    </section>
+</section>
+
+<section>
+    <section data-state="reactive-app">
+        <h2>Building a Reactive Application</h2>
+
+        <p class="link2video">
+            <a href="https://www.parleys.com/play/53a7d2cce4b0543940d9e55c">Video</a>
+        </p>
+
+        <p class="link2video">
+            <a href="https://github.com/ddevore/presentations/blob/master/pdf/autobiography_building_ra.pdf">Slides</a>
+        </p>
+
+        <ul class="speaker">
+            <li>
+                <div class="photo">
+                    <img src="photos/speakers/devore.jpg">
+                </div>
+                <div class="text">
+                    <h4>Duncan DeVore</h4>
+
+                    <p><a target="_blank" href="http://twitter.com/@ironfish"> @ironfish </a></p>
+                </div>
+            </li>
+        </ul>
+
+    </section>
+
+    <section>
+        <h5>Building a Reactive Application</h5>
+
+        <ol>
+            <li>DDD / CQRS / ES</li>
+            <li class="fragment">Immutable domain model</li>
+            <li class="fragment">Book promotion</li>
+        </ol>
+    </section>
+</section>
+
+<section>
+    <section data-state="async-await">
+        <h2>Futures and Async: When to Use Which?</h2>
+
+        <p class="link2video">
+            <a href="https://www.parleys.com/play/53a7d2cce4b0543940d9e556">Video</a>
+        </p>
+
+        <p class="link2video">
+            <a href="http://lampwww.epfl.ch/~phaller/doc/FuturesAsync_ScalaDays2014.pdf">Slides</a>
+        </p>
+
+        <ul class="speaker">
+            <li>
+                <div class="photo">
+                    <img src="photos/speakers/haller.jpg">
+                </div>
+                <div class="text">
+                    <h4>Philipp Haller</h4>
+
+                    <p><a target="_blank" href="http://twitter.com/@philippkhaller"> @philippkhaller </a></p>
+                </div>
+            </li>
+        </ul>
+
+    </section>
+
+    <section>
+        <h5>Futures and Async: When to Use Which?</h5>
+
+        <ol>
+            <li>Future vs Promise -> Use Future (most of the time)</li>
+            <li class="fragment">Futures in for-comprehension (sequential execution)</li>
+            <li class="fragment">Better control flow - async/await</li>
+            <li class="fragment">async/await limitations (Q&A)</li>
+        </ol>
+    </section>
+</section>
+
+<section>
+    <section data-state="resttest-dsl">
+        <h2>RESTTest: exploring DSL design in Scala</h2>
+
+        <p class="link2video">
+            <a href="https://www.parleys.com/play/53a7d2d1e4b0543940d9e56c">Video</a>
+        </p>
+
+        <p class="link2video">
+            <a href="http://www.slideshare.net/IainHull/rest-test">Slides</a>
+        </p>
+
+        <ul class="speaker">
+            <li>
+                <div class="photo">
+                    <img src="photos/speakers/hull.jpg">
+                </div>
+
+                <div class="text">
+                    <h4>Iain Hull</h4>
+
+                    <p><a target="_blank" href="http://twitter.com/@IainHull"> @IainHull </a></p>
+                </div>
+            </li>
+        </ul>
+
+    </section>
+
+    <section>
+        <h5>RESTTest: exploring DSL design in Scala</h5>
+
+        <ol>
+            <li>Start with a narration of a sentence</li>
+            <li class="fragment">Do not overuse syntactic extensions</li>
+            <li class="fragment">
+                Techniques
+                <ul>
+                    <li>Implicit conversions</li>
+                    <li>Implicit parameters</li>
+                    <li>Custom extractors</li>
+                </ul>
+            </li>
+            <li class="fragment">Documentation is essential</li>
+        </ol>
+    </section>
+</section>
+
+<section>
+    <section data-state="effective-api">
+        <h2>Effective APIs</h2>
+
+        <p class="link2video">
+            <a href="https://www.parleys.com/play/53a7d2cce4b0543940d9e559">Video</a>
+        </p>
+
+        <ul class="speaker">
+            <li>
+                <div class="photo">
+                    <img src="photos/speakers/josh.jpg">
+                </div>
+                <div class="text">
+                    <h4>Josh Suereth</h4>
+
+                    <p><a target="_blank" href="http://twitter.com/@jsuereth"> @jsuereth </a></p>
+                </div>
+            </li>
+        </ul>
+
+    </section>
+
+    <section>
+        <h5>Effective APIs</h5>
+
+        <ol>
+            <li>Use meaningful types, not Long, Double, etc.</li>
+            <li class="fragment">
+                Error handling
+                <ul>
+                    <li>Null-object</li>
+                    <li>Either/Validation/Custom error</li>
+                    <li>Try/Future, Actors, System.exit()</li>
+                </ul>
+            </li>
+            <li class="fragment">Binary-compatibility, backward-compatibility</li>
+            <li class="fragment">Java interop</li>
+        </ol>
+    </section>
+</section>
+
+<section>
+    <section data-state="monitoring-akka">
+        <h2>Monitoring Akka</h2>
+
+        <p class="link2video">
+            <a href="https://www.parleys.com/play/53a7d2d0e4b0543940d9e568">Video</a>
+        </p>
+
+        <p class="link2video">
+            <a href="http://www.eigengo.com/monitoring-akka-play/">Slides</a>
+        </p>
+
+        <ul class="speaker">
+            <li>
+                <h4>Jan Macháček</h4>
+
+                <p><a target="_blank" href="http://twitter.com/@honzam399"> @honzam399 </a></p>
+            </li>
+            <li>
+                <h4>Alex Lashford </h4>
+
+                <p><a target="_blank" href="http://twitter.com/@alexlashford"> @alexlashford </a></p>
+            </li>
+        </ul>
+
+    </section>
+
+    <section>
+        <h5>Monitoring Akka</h5>
+
+        <ol>
+            <li>Don't wait until 500 errors appear</li>
+            <li class="fragment">Typesafe Console failed under load :(</li>
+            <li class="fragment"><a href="https://github.com/eigengo/monitor">"Reactive" Monitor</a></li>
+            <li class="fragment">AOP-based</li>
+            <li class="fragment">Various outputs</li>
+        </ol>
+    </section>
+</section>
+
+
+<section>
+    <h2>Resources</h2>
+
+    <ul>
+        <li><a href="https://gist.github.com/kevinwright/9505828a0dcc0c4c0d56">Links to all presentation slides</a></li>
+        <li><a href="https://www.parleys.com/channel/53a7d269e4b0543940d9e535/presentations?sort=date&state=public">Videos
+            on Parleys</a></li>
+    </ul>
+</section>
+
+<section>
+    <h2 style="text-align: center;">Pizza time!</h2>
+</section>
+
+</div>
+
+</div>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.min.js"></script>
+
+<script>
+    // Full list of configuration options available here:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'concave', // default/cube/page/concave/zoom/linear/fade/none
+
+        // Parallax scrolling
+        // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+        // parallaxBackgroundSize: '2100px 900px',
+
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+            { src: 'lib/js/classList.js', condition: function() {
+                return !document.body.classList;
+            } },
+            { src: 'plugin/markdown/marked.js', condition: function() {
+                return !!document.querySelector('[data-markdown]');
+            } },
+            { src: 'plugin/markdown/markdown.js', condition: function() {
+                return !!document.querySelector('[data-markdown]');
+            } },
+            { src: 'plugin/highlight/highlight.js', async: true, callback: function() {
+                hljs.initHighlightingOnLoad();
+            } },
+            { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() {
+                return !!document.body.classList;
+            } },
+            { src: 'plugin/notes/notes.js', async: true, condition: function() {
+                return !!document.body.classList;
+            } }
+        ]
+    });
+
+</script>
+
+</body>
+</html>
